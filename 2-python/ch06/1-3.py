@@ -8,3 +8,18 @@ class Solution:
         s = re.sub('[^a-z0-9]', '', s)
 
         return s == s[::-1]  # 슬라이싱
+
+
+
+
+
+    def is_palindrome2(self, s):
+        s = s.lower()
+        s = re.sub('[^a-z0-9]', '', s)
+        result = s == s[::-1]
+        print(result)
+
+
+Solution().is_palindrome2('abb')
+
+

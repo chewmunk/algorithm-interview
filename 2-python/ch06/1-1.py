@@ -20,11 +20,20 @@ class Solution:
         str_list = []
         for char in s:
             if char.isalnum():
-                str_list.appen(char.lower())
+                str_list.append(char.lower())
         
         while len(str_list) > 1:
             if str_list.pop(0) != str_list.pop():
-                return False
+                return print(False)
         
-        return True
+        return print(True)
 
+# Solution().is_palindrome('aaaa')
+
+
+def test_str():
+    s = '1234567'
+    for v in s:
+        print(v)
+
+test_str()
